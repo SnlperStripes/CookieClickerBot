@@ -1,0 +1,28 @@
+from selenium import webdriver
+import time
+
+c = 0
+
+pro = "product"
+fab = 0
+Pro0 = pro + str(fab)
+
+driver.find_element_by_id(Pro0)
+upgrade0 = driver.find_element_by_id(Pro0)
+
+While True:    
+
+driver = webdriver.Chrome()
+driver.get('https://orteil.dashnet.org/cookieclicker/')
+driver.maximize_window()
+
+driver.find_element_by_id("bigCookie")
+Cookie = driver.find_element_by_id("bigCookie")
+while True:
+    Cookie.click()
+    c += 1
+    if c > 20:
+        driver.find_element_by_id(Pro0)
+        upgrade = driver.find_element_by_id(Pro0)
+        upgrade.click()
+        c = 0
