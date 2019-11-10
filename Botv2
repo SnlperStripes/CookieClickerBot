@@ -1,0 +1,74 @@
+from selenium import webdriver
+import time
+
+fab = 0
+a = 0
+
+driver = webdriver.Chrome()
+driver.get('https://orteil.dashnet.org/cookieclicker/')
+driver.maximize_window()
+
+driver.find_element_by_id("bigCookie")
+Cookie = driver.find_element_by_id("bigCookie")
+
+driver.find_element_by_id("cookies")
+cookiecount = driver.find_element_by_id("cookies")
+
+driver.find_element_by_id("product0")
+upgrade0 = driver.find_element_by_id("product0")
+
+driver.find_element_by_id("product1")
+upgrade1 = driver.find_element_by_id("product1")
+
+driver.find_element_by_id("product2")
+upgrade2 = driver.find_element_by_id("product2")
+
+driver.find_element_by_id("product3")
+upgrade3 = driver.find_element_by_id("product3")
+
+driver.find_element_by_id("product4")
+upgrade4 = driver.find_element_by_id("product4")
+
+driver.find_element_by_id("product5")
+upgrade5 = driver.find_element_by_id("product5")
+
+driver.find_element_by_id("product6")
+upgrade6 = driver.find_element_by_id("product6")
+
+driver.find_element_by_id("product7")
+upgrade7 = driver.find_element_by_id("product7")
+
+driver.find_element_by_id("product8")
+upgrade8 = driver.find_element_by_id("product8")
+
+driver.find_element_by_id("product9")
+upgrade9 = driver.find_element_by_id("product9")
+
+driver.find_element_by_id("product10")
+upgrade10 = driver.find_element_by_id("product10")
+
+driver.find_element_by_id("product11")
+upgrade11 = driver.find_element_by_id("product11")
+
+driver.find_element_by_id("product12")
+upgrade12 = driver.find_element_by_id("product12")
+
+driver.find_element_by_id("product13")
+upgrade13 = driver.find_element_by_id("product13")
+
+driver.find_element_by_id("product14")
+upgrade14 = driver.find_element_by_id("product14")
+
+driver.find_element_by_id("product15")
+upgrade15 = driver.find_element_by_id("product15")
+
+driver.find_element_by_id("product16")
+upgrade16 = driver.find_element_by_id("product16")
+
+while True:
+    Cookie.click()
+    fab += 1
+    if fab > 20:
+        upgrade0.click()
+        fab = 0
+        print(cookiecount)
